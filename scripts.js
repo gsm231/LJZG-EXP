@@ -1,7 +1,7 @@
 // ==================== CONFIGURATION ====================
 const CONFIG = {
     typingSpeed: 100,
-    typingDelay: 2000, // Aumentado a 2 segundos (antes era 1000ms)
+    typingDelay: 5000,
     particleCount: 100,
     toastDuration: 3000
 };
@@ -403,7 +403,7 @@ print("Speed Hack Loaded!")`
 ];
 
 // ==================== TYPING ANIMATION ====================
-const typingTexts = ['Scripts de Roblox', 'LJZG EXP'];
+const typingTexts = ['Scripts Para Roblox', 'LJZG EXP'];
 let currentTextIndex = 0;
 
 function typeText(element, speed = CONFIG.typingSpeed) {
@@ -523,72 +523,6 @@ function initParticles() {
     window.addEventListener('resize', () => {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
-    });
-}
-
-// ==================== CUSTOM CURSOR ====================
-function initCustomCursor() {
-    const cursorDot = document.querySelector('.cursor-dot');
-    const cursorOutline = document.querySelector('.cursor-outline');
-    
-    if (!cursorDot) return;
-    
-    // Eliminar el círculo exterior si existe
-    if (cursorOutline) {
-        cursorOutline.style.display = 'none';
-    }
-    
-    // Check if device is mobile or touch device
-    if (window.innerWidth <= 768 || ('ontouchstart' in window)) {
-        cursorDot.style.display = 'none';
-        document.body.style.cursor = 'auto';
-        return;
-    }
-    
-    let mouseX = 0;
-    let mouseY = 0;
-    let isMouseMoving = false;
-    let timeout;
-    
-    // Ocultar cursor cuando el mouse no se mueve
-    document.addEventListener('mousemove', (e) => {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-        
-        cursorDot.style.left = mouseX + 'px';
-        cursorDot.style.top = mouseY + 'px';
-        cursorDot.style.opacity = '1';
-        
-        isMouseMoving = true;
-        
-        // Resetear el timeout
-        clearTimeout(timeout);
-        timeout = setTimeout(() => {
-            cursorDot.style.opacity = '0';
-        }, 2000);
-    });
-    
-    // Asegurar que el cursor se muestre al entrar al documento
-    document.addEventListener('mouseenter', () => {
-        cursorDot.style.opacity = '1';
-    });
-    
-    // Ocultar cursor al salir del documento
-    document.addEventListener('mouseleave', () => {
-        cursorDot.style.opacity = '0';
-    });
-    
-    // Efecto hover en elementos interactivos
-    document.querySelectorAll('a, button, .btn, .nav-link, .script-card, .contact-card').forEach(el => {
-        el.addEventListener('mouseenter', () => {
-            cursorDot.style.transform = 'scale(2)';
-            cursorDot.style.background = 'var(--color-accent)';
-        });
-        
-        el.addEventListener('mouseleave', () => {
-            cursorDot.style.transform = 'scale(1)';
-            cursorDot.style.background = 'var(--color-primary)';
-        });
     });
 }
 
@@ -938,7 +872,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Initialize all features
     initParticles();
-    initCustomCursor();
     initScrollProgress();
     initHeaderScroll();
     initMobileMenu();
