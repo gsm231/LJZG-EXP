@@ -77,25 +77,6 @@ a:focus,
     color: var(--color-bg-dark);
 }
 
-/* ==================== CUSTOM CURSOR ==================== */
-.cursor-dot {
-    width: 6px;
-    height: 6px;
-    background: var(--color-primary);
-    border-radius: 50%;
-    position: fixed;
-    pointer-events: none;
-    z-index: 10000;
-    transform: translate(-50%, -50%);
-    box-shadow: var(--glow-primary);
-    transition: width 0.2s, height 0.2s, background 0.2s;
-}
-
-/* Eliminar el círculo exterior */
-.cursor-outline {
-    display: none;
-}
-
 /* Ocultar cursor personalizado en dispositivos táctiles y cuando el mouse no está en movimiento */
 @media (hover: none) and (pointer: coarse) {
     .cursor-dot {
@@ -105,11 +86,6 @@ a:focus,
     body {
         cursor: auto;
     }
-}
-
-/* Ocultar cursor personalizado en elementos específicos */
-a, button, .btn, .nav-link, .script-card, .contact-card {
-    cursor: none;
 }
 
 /* Mostrar cursor normal en dispositivos que no soportan hover */
