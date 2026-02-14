@@ -1,7 +1,7 @@
 // ==================== CONFIGURATION ====================
 const CONFIG = {
     typingSpeed: 100,
-    typingDelay: 5000,
+    typingDelay: 2000,
     particleCount: 100,
     toastDuration: 3000
 };
@@ -11,7 +11,14 @@ const scriptsData = [
     {
         id: 1,
         name: "Universal ESP",
-        description: "Visualiza a todos los jugadores a través de paredes con información detallada en tiempo real",
+        description: "Este script es un ESP sencillo que hice para practicar. Muestra a los jugadores a través de paredes con información básica.",
+        features: [
+            "Wall check - Detecta cuando hay paredes de por medio",
+            "Team check - Puedes elegir si ver a todos o solo enemigos",
+            "Distancia - Muestra qué tan lejos está cada jugador",
+            "Cajas personalizadas - Dibuja cajas alrededor de los jugadores",
+            "Optimizado - Consume pocos recursos"
+        ],
         category: "exploit",
         icon: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>`,
         code: `-- Universal ESP by LJZG
@@ -77,8 +84,16 @@ print("ESP Loaded Successfully!")`
     },
     {
         id: 2,
-        name: "Aimbot Avanzado",
-        description: "Sistema de puntería automática con predicción avanzada y smoothing configurable",
+        name: "LJZG Aim Bot",
+        description: "Este script es un aimbot sencillo pero funcional. Lo hice para aprender sobre predicción y detección.",
+        features: [
+            "Wall check - No apunta si hay paredes de por medio",
+            "Team check - Ignora a los compañeros de equipo",
+            "Smoothing - Movimiento suave ajustable",
+            "FOV Circle - Círculo que muestra el alcance",
+            "Predicción - Compensa el movimiento del objetivo",
+            "Aim part selector - Elige a qué parte del cuerpo apuntar"
+        ],
         category: "exploit",
         icon: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>`,
         code: `-- Aimbot Avanzado by LJZG
@@ -170,8 +185,15 @@ print("Aimbot Activated!")`
     },
     {
         id: 3,
-        name: "Admin Commands GUI",
-        description: "Panel de administración completo con más de 50 comandos personalizables",
+        name: "Admin Commands",
+        description: "Un panel de comandos simple que hice cuando estaba aprendiendo a hacer GUIs. Tiene lo básico.",
+        features: [
+            "GUI arrastrable - Puedes moverla por la pantalla",
+            "Speed command - Cambia la velocidad de movimiento",
+            "Jump command - Ajusta la altura de salto",
+            "God mode - Vuelve al jugador invencible",
+            "Fácil de usar - Solo escribe el comando"
+        ],
         category: "admin",
         icon: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>`,
         code: `-- Admin Commands GUI by LJZG
@@ -259,7 +281,14 @@ print("Admin GUI Loaded!")`
     {
         id: 4,
         name: "Infinite Jump",
-        description: "Salta infinitamente sin límites, perfecto para exploración",
+        description: "Un pequeño script que hice por aburrimiento. Literalmente solo te deja saltar infinito, nada más.",
+        features: [
+            "Salto infinito - Salta las veces que quieras",
+            "Sin límites - No hay restricciones de altura",
+            "Sencillo - Solo activa y salta",
+            "Ligero - No consume recursos",
+            "Compatible - Funciona en cualquier juego"
+        ],
         category: "misc",
         icon: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>`,
         code: `-- Infinite Jump by LJZG
@@ -286,7 +315,14 @@ print("Infinite Jump Activated!")`
     {
         id: 5,
         name: "Fly Script V3",
-        description: "Sistema de vuelo avanzado con control de velocidad y física mejorada",
+        description: "Hice este fly script para probar la física de Roblox. Está medio simple pero cumple. Lo comparto por si a alguien le sirve.",
+        features: [
+            "Vuelo libre - Muévete en cualquier dirección",
+            "Control de velocidad - Ajusta qué tan rápido vuelas",
+            "Física básica - Comportamiento suave",
+            "Toggle con E - Activa y desactiva fácilmente",
+            "Cámara seguimiento - Vuelas hacia donde miras"
+        ],
         category: "misc",
         icon: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"></path></svg>`,
         code: `-- Fly Script V3 by LJZG
@@ -376,7 +412,14 @@ print("Fly Script Loaded! Press E to toggle")`
     {
         id: 6,
         name: "Speed Hack",
-        description: "Aumenta tu velocidad de movimiento con controles personalizables",
+        description: "El clásico speed hack. Lo hice en 5 minutos solo para ver si funcionaba. Nada del otro mundo.",
+        features: [
+            "Velocidad aumentada - Corre más rápido",
+            "Multiplicador ajustable - Cambia la velocidad",
+            "Persistente - Se mantiene al renacer",
+            "Sencillo - Solo actívalo y corre",
+            "Ligero - No afecta el rendimiento"
+        ],
         category: "misc",
         icon: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>`,
         code: `-- Speed Hack by LJZG
@@ -417,7 +460,6 @@ function typeText(element, speed = CONFIG.typingSpeed) {
             index++;
         } else {
             clearInterval(interval);
-            // Esperar más tiempo antes de borrar (aumentado a 3500ms)
             setTimeout(() => {
                 eraseText(element, speed);
             }, 3500);
@@ -434,9 +476,7 @@ function eraseText(element, speed) {
             element.textContent = text;
         } else {
             clearInterval(interval);
-            // Switch to next text
             currentTextIndex = (currentTextIndex + 1) % typingTexts.length;
-            // Esperar antes de escribir el siguiente texto
             setTimeout(() => {
                 typeText(element, speed);
             }, 800);
@@ -652,9 +692,21 @@ function attachScriptListeners() {
 function openModal(script) {
     const modal = document.getElementById('scriptModal');
     const modalTitle = document.getElementById('modalTitle');
+    const modalDescription = document.getElementById('modalDescription');
+    const modalFeatures = document.getElementById('modalFeatures');
     const modalCode = document.getElementById('modalCode');
     
     modalTitle.textContent = script.name;
+    modalDescription.textContent = script.description;
+    
+    if (script.features && script.features.length > 0) {
+        modalFeatures.innerHTML = script.features.map(feature => 
+            `<li>${feature}</li>`
+        ).join('');
+    } else {
+        modalFeatures.innerHTML = '<li>No hay características listadas</li>';
+    }
+    
     modalCode.textContent = script.code;
     
     modal.classList.add('active');
@@ -707,7 +759,6 @@ function initModal() {
 function copyToClipboard(text, buttonElement) {
     if (navigator.clipboard && window.isSecureContext) {
         navigator.clipboard.writeText(text).then(() => {
-            // Visual feedback on button
             if (buttonElement) {
                 const originalText = buttonElement.textContent;
                 buttonElement.textContent = '✓ Copiado';
@@ -787,7 +838,6 @@ function showToast(message, type = 'success') {
         toastMessage.textContent = message;
     }
     
-    // Cambiar color según tipo
     if (type === 'error') {
         toast.style.background = 'linear-gradient(135deg, #ff4444, #ff0000)';
     } else {
@@ -843,16 +893,13 @@ function fixBottomLine() {
 
 // ==================== ELIMINAR OUTLINE DE NAVEGACIÓN ====================
 function removeNavigationOutline() {
-    // Eliminar outline de todos los elementos del menú
     document.querySelectorAll('.nav-link, .burger-menu, .btn, .script-btn, .contact-card, .modal-close').forEach(el => {
         el.addEventListener('mousedown', (e) => {
             e.preventDefault();
-            // Prevenir el outline solo en clicks con mouse
             el.style.outline = 'none';
         });
         
         el.addEventListener('keydown', (e) => {
-            // Mantener outline para navegación por teclado (accesibilidad)
             if (e.key === 'Tab') {
                 el.style.outline = '2px solid var(--color-primary)';
             }
@@ -862,7 +909,6 @@ function removeNavigationOutline() {
 
 // ==================== INITIALIZE ====================
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize hero typing animation
     const typingElement = document.querySelector('.typing-text');
     if (typingElement) {
         setTimeout(() => {
@@ -870,7 +916,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, CONFIG.typingDelay);
     }
     
-    // Initialize all features
     initParticles();
     initScrollProgress();
     initHeaderScroll();
@@ -880,10 +925,9 @@ document.addEventListener('DOMContentLoaded', () => {
     initModal();
     initScrollAnimations();
     fixBottomLine();
-    removeNavigationOutline(); // Nueva función para eliminar outlines
+    removeNavigationOutline();
     
     console.log('%c LJZG Scripts Loaded! ', 'background: linear-gradient(90deg, #00d4ff, #00ffff); color: #0a0e1a; font-size: 20px; font-weight: bold; padding: 10px;');
 });
 
-// Asegurar que no haya líneas blancas al redimensionar
 window.addEventListener('resize', fixBottomLine);
