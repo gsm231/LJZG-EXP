@@ -11,7 +11,7 @@ const scriptsData = [
     {
         id: 1,
         name: "Anti Waves | Escape Tsunami for Brainros",
-        description: "Este script es un script sencillo que hice por aburrimiento. Elimina el daño de todas las olas (solo ten cuidado con las olas que salen del piso!).",
+        description: "Este es un script sencillo. Elimina el daño de todas las olas (solo ten cuidado con las olas que salen del piso!).",
         features: [
             "Eliminar daño de olas - Podrás recoger cualquier brainrot sin preocupaciones",
             "Optimizado - Consume pocos recursos"
@@ -228,7 +228,7 @@ function loadScripts() {
             <h3 class="script-title">${script.name}</h3>
             <p class="script-description">${script.description}</p>
             <div class="script-buttons">
-                <button class="script-btn btn-view" data-id="${script.id}">Ver Código</button>
+                <button class="script-btn btn-view" data-id="${script.id}">Ver Script</button>
                 <button class="script-btn btn-copy" data-id="${script.id}">Copiar</button>
             </div>
         `;
@@ -350,7 +350,7 @@ function copyToClipboard(text, buttonElement) {
                     buttonElement.classList.remove('copied');
                 }, 2000);
             }
-            showToast('¡Código copiado al portapapeles!');
+            showToast('¡Script copiado al portapapeles!');
         }).catch(err => {
             console.error('Error al copiar:', err);
             fallbackCopy(text, buttonElement);
@@ -383,7 +383,7 @@ function fallbackCopy(text, buttonElement) {
                     buttonElement.classList.remove('copied');
                 }, 2000);
             }
-            showToast('¡Código copiado al portapapeles!');
+            showToast('¡Script copiado al portapapeles!');
         } else {
             showToast('Error al copiar el código', 'error');
         }
