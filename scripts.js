@@ -10,7 +10,7 @@ const CONFIG = {
 const scriptsData = [
     {
         id: 1,
-        name: "Anti Waves | Escape Tsunami for Brainros",
+        name: "Anti Waves | Escape Tsunami for Brainrots",
         description: "Este es un script sencillo. Elimina el daño de todas las olas (solo ten cuidado con las olas que salen del piso!).",
         features: [
             "Eliminar daño de olas - Podrás recoger cualquier brainrot sin preocupaciones",
