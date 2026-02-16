@@ -22,7 +22,7 @@ const scriptsData = [
     <path d="M2 17c2.5-3 5-3 7 0 2 3 4.5 3 7 0 2.5-3 5-3 7 0"></path>
     <path d="M2 7c2.5-3 5-3 7 0 2 3 4.5 3 7 0 2.5-3 5-3 7 0"></path>
 </svg>`,
-        code: ` loadstring(game:HttpGet("https://raw.githubusercontent.com/gsm231/Anti-Waves/refs/heads/main/V0.1"))()`
+        code: ` loadstring(game:HttpGet("https://raw.githubusercontent.com/gsm231/Anti-Waves/refs/heads/main/0.2"))()`
     },
 ];
 
